@@ -1,0 +1,8 @@
+[theme]
+base = "light"                        # Options: "light" or "dark"
+primaryColor = "#000000"              # Interactive elements, sliders, and button hover
+backgroundColor = "#d4d4d4"           # Main page background
+secondaryBackgroundColor = "#a1a1a1"  # Sidebar and widget backgrounds
+textColor = "#000000"                 # Main body text
+linkColor = "#0068C9"                 # Hyperlink text
+codeBackgroundColor = "#F8F9FA"       # Code block background
