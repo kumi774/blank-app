@@ -22,7 +22,7 @@ with tab1:
                 st.write(f"https://{WEBSEARCH}  itself is a safe website, but media hosted on this website may be unsafe.")
             if WEBSEARCH in scary_websites:
                 st.write("This website is NOT SAFE, proceed at your own risk.")
-            if WEBSEARCH not in safe_websites and WEBSEARCH not in scary_websites and not in Threats_possible:
+            if WEBSEARCH not in safe_websites and WEBSEARCH not in scary_websites and websearch not in Threats_possible:
                 st.write("Website is not registered in our database, please proceed with caution, and report the site to our company")
     st.write("Questions? Contact us at zacarias-d@students.grps.org or williams-l@students.grps.org")
 
