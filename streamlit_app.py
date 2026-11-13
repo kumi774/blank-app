@@ -1,5 +1,4 @@
 import time
-from github import Github, Auth
 import streamlit as st
 
 st.title("CodieAI") 
@@ -59,21 +58,6 @@ with tab2:
                         with open("reported_sites.txt", "a") as f:
                             for site in WEBREPORT.split(", "):
                                 f.write(f"{site} is to be reviewed\n")
-
-
-auth = Auth.Token("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")
-g = Github(auth=auth)
-
-repo = g.get_repo("kumi774/CODiE-AI")
-file = repo.get_contents("CODiE-AI/reported_sites.txt", ref="main")
-
-current_text = file.decoded_content.decode("utf-8")
-updated_text = current_text + f"{WEBREPORT} is to be revised\n"
-
-repo.update_file(
-    path=file.path,
-    message="Automated site report update",
-    content=updated_text,
     sha=file.sha,
     branch="main"
 )
