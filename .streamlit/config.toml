@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+backgroundColor = "#d4d4d4"
+secondaryBackgroundColor = "#a1a1a1"
+textColor = "#000000"
+linkColor = "#0068C9"
+codeBackgroundColor = "#F8F9FA"
